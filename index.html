@@ -1,202 +1,256 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portal de notícias</title>
-    <link rel="stylesheet" href="./main.css" />
+    <title>EBAC Motors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Meu portal de notícias</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#sports" title="Ir para a seção de esportes">Esportes</a>
-                    </li>
-                    <li>
-                        <a href="#economy" title="Ir para a seção de notícias">Economia</a>
-                    </li>
-                    <li>
-                        <a href="#entreterimento" title="Ir para seção de entreterimento">Entreterimento</a> 
-                    </li>
-                    <li>
-                        <a href="#tecnologia" title="Ir para seção de tecnologia">Tecnologia</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="sports">
-        <div class="container">
-                <h2>Esportes</h2>
-           <div class="articles">
-            <article>
-                <img src="./imagens/futebol.jpg" alt="Bola de futebol no gramado" />
-                <header>
-                    <time>13/07/2022 às 12:35</time>
-                </header>
-                <h3>Grande clássico na noite de hoje</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-            <article>
-                <img src="./imagens/futebol-americano.jpg" alt="Jogador de futebol americano correndo com a bola na mão" />
-                <header>
-                    <time>13/07/2022 às 12:35</time>
-                </header>
-                <h3>Noite do Superbowl</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-            <article>
-                <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
-                <header>
-                    <time>13/07/2022 às 12:35</time>
-                </header>
-                <h3>Notícia sobre a NBA</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-            <article>
-                <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
-                <header>
-                    <time>13/07/2022 às 12:35</time>
-                </header>
-                <h3>Notícia sobre a NBA</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-           </div>
-        </div>
-    </section>
-    <section id="economy">
-        <div class="container">
-                <h2>Economia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/dolares.jpg" alt="Muitos dólares" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Dólar em alta de 0.50%</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/euro.jpg" alt="Várias notas de euro" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Euro em queda de 0.40%</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/petroleo.jpg" alt="Extração de petróleo" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Alta no preço do barril do petróleo</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
+        <div class="container container-flex">
+            <h1>EBAC Motors</h1>
+            <div class="menu-hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
             </div>
-            </div>
-    </section>
-    <section id="entreterimento">
-        <div class="container">
-                <h2>Entreterimento</h2>
-           <div class="articles">
-            <article>
-                <img src="./imagens/entreterimento1.jpg" alt="Próximos Eventos" />
-                <header>
-                    <time>03/01/2023 às 19:52</time>
-                </header>
-                <h3>Confira nossa agenda de Eventos</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-            <article>
-                <img src="./imagens/entreterimento2.jpg" alt="Confira os Lançamentos no Cinema" />
-                <header>
-                    <time>03/01/2023 às 19:54</time>
-                </header>
-                <h3>Já nos Cinemas</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-            <article>
-                <img src="./imagens/entreterimento.jpg" title="Próximos Shows" />
-                <header>
-                    <time>03/01/2023 às 19:59</time>
-                </header>
-                <h3>Próximos Shows</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-           </div>
         </div>
-        <section id="tecnologia">
+        <nav>
             <div class="container">
-                    <h2>Tecnologia</h2>
-               <div class="articles">
-                <article>
-                    <img src="./imagens/tecno1 (1).jpg" alt="Novos Lançamentos" />
-                    <header>
-                        <time>03/01/2023 às 20:14</time>
-                    </header>
-                    <h3>Novidades da Era Digital</h3>
+            <ul>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Em destaque</a>
+                </li>
+                <li>
+                    <a href="#">Promoções</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+            </div>  
+        </nav>
+    </header>
+    <div id="carrousel-imagens">
+        <img src="./images/slide1.png" alt="Carro da Porsche">
+        <img src="./images/slide2.png" alt="Carro da BMW">
+        <img src="./images/slide3.png" alt="Carro da Ford">
+    </div> 
+    <section id="sobre-a-loja">
+        <div class="container container-flex">
+            <img src="./images/loja.jpg" alt="Imagen loja EBAC Motors">
+            <div>
+            <h2>Sobre a EBAC Motors</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorem quidem reiciendis, a, vitae corrupti veniam, porro ad beatae illo sed! Vel beatae minima aperiam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorem quidem reiciendis, a, vitae corrupti veniam, porro ad beatae illo sed! Vel beatae minima aperiam.
+            </p>
+        </div>  
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                        Câmbio automático, 4 portas, vidro e travas elétricas.
                     </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/tecno2.jpg" alt="Confira os Lançamentos no Cinema" />
-                    <header>
-                        <time>03/01/2023 às 20:20</time>
-                    </header>
-                    <h3>Novos Capacitores</h3>
+                    <div class="price">
+                    <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                        Câmbio automático, 4 portas, vidro e travas elétricas.
                     </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/Bola-tec.jpg" alt="A bola que mudou o futebol" />
-                    <header>
-                        <time>03/01/2023 às 20:20</time>
-                    </header>
-                    <h3>Tecnologia na Copa do Mundo 2022</h3>
+                    <div class="price">
+                    <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                        Câmbio automático, 4 portas, vidro e travas elétricas.
                     </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-               </div>
-            </div>
+                    <div class="price">
+                    <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidro e travas elétricas.
+                    </p>
+                    <div class="price">
+                    <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidro e travas elétricas.
+                    </p>
+                    <div class="price">
+                    <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Promoções</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidro e travas elétricas.
+                    </p>
+                    <div class="price">
+                    <del>R$ 100.000,00</del>
+                    <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidro e travas elétricas.
+                    </p>
+                    <div class="price">
+                    <del>R$ 100.000,00</del>
+                    <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidro e travas elétricas.
+                    </p>
+                    <div class="price">
+                    <del>R$ 100.000,00</del>
+                    <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidro e travas elétricas.
+                    </p>
+                    <div class="price">
+                    <del>R$ 100.000,00</del>
+                    <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidro e travas elétricas.
+                    </p>
+                    <div class="price">
+                    <del>R$ 100.000,00</del>
+                    <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo"> 
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="veiculo-interesse">Veículo de interesse:</label>
+                    <input type="text" id="veiculo-interesse" name="veiculoDeInteresse">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>
+            2023 &copy; EBAC Motors - Todos os direitos reservados.
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#"></a>
+                        <img src="./icones/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                        <img src="./icones/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                        <img src="./icones/youtube.png" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
+<script src="./js/messages_pt_BR.min.js"></script>
+<script src="./js/mains.js"></script>
 </body>
 </html>
