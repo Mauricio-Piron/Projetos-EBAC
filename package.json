@@ -1,16 +1,11 @@
 {
-  "name": "exercicio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "sass": "sass",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src  --watch -d dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "browserslist": "> 0.25%",
   "devDependencies": {
-    "sass": "^1.63.6"
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10"
   }
 }
