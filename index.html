@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina do Chico - Oficina Mecânica Especializada</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> <!--cabeçalho-->
+        <div class="container">
+        <h1>Oficina do Chico</h1> 
+        <nav> <!--Criação de menus-->
+            <ul> <!--Lista não ordenada-->
+                <li>
+                    <a href="#sobre">Sobre a Oficina</a> <!--Links-->
+                </li>
+                <li>
+                    <a href="#contact">Contato</a> <!--Links-->
+                </li>
+            </ul>
+        </nav>   
+        </div>
+    </header>
+    <section id="sobre">
+        <div class="container">
+            <img class="store-front" src="./imagens/oficina-mecanica-organizada-720x377.jpg" alt="Fachada da loja Games Shop"/>
+            <div>
+                <h2>Sobre a Loja</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti delectus doloribus suscipit molestiae quam porro quasi itaque facere, dolorem eos voluptatem sunt ea totam eius veniam quod quaerat in?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem totam ex magnam hic, qui dolorem quibusdam cupiditate perferendis incidunt, beatae repellat veniam mollitia doloremque molestiae nihil consectetur officia. Repudiandae.
+                </p>
+                <ul class="brands-list"> <!--Criando uma classe será utilizada no CSS-->
+                    <li><img src="./imagens/fiat-logo-21.png" alt="Nintendo" /> </li>
+                    <li><img src="./imagens/logo-volkswagen.png" alt="Xbox" /> </li>
+                    <li><img src="./imagens/volvo-logo.png" alt="playstation" /> </li>
+                </ul>
+            </div>       
+        </div>
+    </section>
+    <section id="contact"> <!--Adiconando id na seção de contato para estilizar posteriormente com CSS-->
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-metodos"> <!--Div criada para ser o container das subseções de contato-->
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required /> <!--Required - definindo como obrigatório-->
+                        <input type="email" placeholder="Seu e-mail" (opcional) />
+                        <input type="tel" placeholder="Seu telefone" required/>
+                        <textarea placeholder="Sua mensagem" required minlength="10"></textarea>
+                        <select name="Marca" required>
+                            <option value="">Selecione a Marca do Veículo</option>
+                            <option value="Fiat">Fiat</option>
+                            <option value="Volkswagen"> Volkswagen</option>
+                            <option value="Volvo">Volvo</option>
+                        </select>
+                        <button type="submit">Enviar mensagem</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram" >
+                            <img src="./imagens/instagram.png" alt="Logo Instagram" />
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook" >
+                            <img src="./imagens/facebook.png" alt="Logo Facebook" />
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youtube">
+                            <img src="./imagens/youtube.png" alt="Logo Youtube" />
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
+                    <p>
+                        Rua HTML nº 121, Vila CSS - Belo Horizonte-MG
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Oficina do Chico - Todos os direitos reservado - 2023
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

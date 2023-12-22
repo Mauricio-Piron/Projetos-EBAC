@@ -1,0 +1,153 @@
+* {
+    margin: 0; /* Adionando Margem aos elementos */
+    padding: 0; /* Espaçamentos internos */
+    box-sizing: border-box; /* informar que o espaçamento deve ser considerado nas medidas informadas pela largura e altura */
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Open Sans', cursive;
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #0c283b; /*Aplicando cor de fundo ao elemento */
+    color: #bed4db; /*Aplicando cor ao texto */
+    font-size: 18px; /*Fonte do menu */
+}
+
+
+header nav li {
+    display: inline; /* Elemento será exibido na mesma linha */
+    margin-left: 16px; 
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #bed4db;
+    text-decoration: none; /* Removendo underline dos links */
+}
+
+.container {
+    max-width: 1280px; /* Largura máxima */
+    width: 100%; /* Largura */
+    margin: 0 auto;
+}
+
+header .container, 
+section .container { 
+    display: flex; /* Título e Menu lado a lado */
+    align-items: center; /* Centralizar na vertical */
+    justify-content: space-between; /* Jogar o menu para extrema direita */
+}
+
+.brands-list img { 
+    height: 24px; /* Informando que as imagens devem ter no máximo 24px */
+}
+
+.brands-list li {
+    display: inline; /* adionanco uma imagem ao lado da outra */
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start; /* Sobrescrevendo a regra/propriedade também conhecido como cascata do CSS */
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px; /* define a margin na parte inferior de um elemento */
+}
+
+section {
+    color: #0c283b;
+}
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+.social-links img { /* Reduzindo tamanho das imagens e largura */
+    height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container { /* O container dentro de contact vai seguir a seguinte regra */
+    display: block;
+}
+
+.contact-metodos {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button { /*Customizando Formulário */
+    background-color: #0c283b; /* Cor de Fundo */
+    color: #bed4db; /* Cor do texto */
+    border: none;  /*Retirando borda */
+    cursor: pointer; /* Adiciona efeito quando usuário selecionar o botão */
+}
+
+form button:hover { /* permite a troca de cor quando selecionr o botão */
+    background-color: #041a29; 
+}
+
+input:focus, textarea:focus form:focus { /* Quando o campo esta selecionado e chamado de focus ou seja o campo está em foco */
+    outline-color: #0c283b;
+}
+
+footer {
+    background-color: #0c283b;
+    color:#bed4db;
+    padding: 16px 0;
+}
+
+form select {
+    background-color: #bed4db;
+    color: #0c283b;
+    font-size:15px;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif; 
+    border: none;
+}
