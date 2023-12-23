@@ -1,0 +1,23 @@
+@use 'variaveis';
+@use 'header';
+@use 'trailer';
+@use 'footer';
+
+body{
+    font-family: 'Hind Siliguri', sans-serif;
+    background-image: url('../../dist/images/harry-potter.fundo.jpg');
+    background-size: 200%;
+    background-repeat: no-repeat;
+
+    @media (max-width:768px){
+        background-size: 210%;
+    }
+
+    @media (max-width:1024px){
+        background-size: 160%;
+    }
+}
+
+
+
+
