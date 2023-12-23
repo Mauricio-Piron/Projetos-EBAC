@@ -2,66 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+body {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    margin: 80px auto;
-    max-width: 640px;
-    width: 100%;
-    padding: 20px;
     align-items: center;
-    background-color: rgb(252, 252, 252);
-    
-    
+    justify-content: center;
+    background-color: #84a5eb7e;
+}
+    .title {
+        text-align: center;
+        padding: 16px;
 }
 
-form {
-    margin-top: 40px;
-}
-
-input, button {
-    display: block;
-    padding: 8px;
-    margin-bottom: 8px;
-    width: 100%;
-    resize: none;
-    border-radius: 5px;
-}
-
-
-h2 {
-    font-size: 15px;
-    font-weight: 100;
-    color: rgb(167, 167, 167);
-    font-style: italic;
-}
-
-button {
-
-    border: none;
-    background-color: rgba(93, 172, 77, 0.603);
-    color: #fff;
-    border-width: 3px;
-    cursor: pointer;
-
-}
-
-button:hover {
-    background-color: rgba(70, 129, 58, 0.603);
-}
-
-.mensagem {
-    padding: 16px;
-    background-color: rgba(25, 105, 25, 0.815);
-    padding: 7px;
-    margin-top: 10px;
-    font-size: 12px;
-    color: #fff;
-    display: none;
-    border-radius: 5px;
-    
+.btn {
+    font-size: 16px;
+    padding: 6px;
+    width: 600px;
+  
 }
