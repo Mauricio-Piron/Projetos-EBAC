@@ -1,0 +1,90 @@
+body {
+    font-family: Dosis, sans-serif;
+}
+
+.section-title {
+    font-family: Pacifico, cursive;
+}
+.navbar {
+    background-color: #28632b;
+    
+}
+
+.text-colored {
+    color: #28632b;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #28632b;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand {
+    color: #fff;
+}
+
+section img {
+    display:block !important;
+    width:100% !important;
+}
+
+#cabecalho .navbar-brand:hover,
+.nav-estrutura {
+        color: #fff;
+}
+
+#cabecalho .navbar-toggler {
+    background-color: #96c597;
+
+}
+
+#sobre, #estrutura {
+    background-color: #64aa68;
+}
+
+.card-header {
+    text-align: center;
+    color: #28632b;
+    font-family: Pacifico;
+}
+
+.btn-outline-primary {
+    background-color: #28632b;
+    color: #fff;
+    border-color: #64aa68;
+}
+
+.btn-outline-primary:hover {
+    background-color: #64aa68;
+    border-color: #64aa68;
+}
+
+.nav-estrutura .nav-link.active {
+    background-color: #28632b;
+    color: #fff;
+}
+
+.nav-estrutura .nav-link:hover{
+    background-color: #64aa68;
+    border-color: #64aa68;
+    color: #28632b;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+    .tamanho {
+        flex-direction: column;
+    }
+}

@@ -1,50 +1,433 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercício</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Racho EBAC</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="navbar navbar-expand-lg stick-top p-3" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Rancho EBAC</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <!-- Menu Hamburger -->
+    <nav class="navbar-collapse collapse justify-content-end" id="menu">
+        <ul class="nav nav-pills d-block d-md-flex">
+            <li class="nav-item fw-bold">
+                <a href="#sobre-o-rancho" class="nav-link active">
+                    <i class="bi bi-house-door me-1"></i>
+                    Sobre o Rancho EBAC
+                </a>
+            </li>
+            <li class="nav-item fw-bold">
+                <a href="#eventos" class="nav-link">
+                    <i class="bi bi-house-door me-1"></i>
+                    Eventos
+                </a>
+            </li>
+            <li class="nav-item fw-bold">
+                <a href="#estrutura" class="nav-link">
+                    <i class="bi bi-house-door me-1"></i>
+                    Nossa estrutura
+                </a>
+            </li>
+            <li class="nav-item fw-bold">
+                <a href="#contato" class="nav-link">
+                    <i class="bi bi-house-door me-1"></i>
+                    Fale Conosco
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</header>
 
-  <body class="bg-light">
-    <div class="container mt-5">
-      <form class="bg-light p-4 rounded">
-        <div class="mb-3">
-          <label for="nome" class="form-label">Nome:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="nome"
-            placeholder="Digite seu nome"
-          />
+    <!-- Carousel -->
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true" >
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="d-block" src="https://cdn.pixabay.com/photo/2018/03/13/05/05/da-lat-3221709_1280.jpg" alt="Foto entrada principal">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block" src="https://cdn.pixabay.com/photo/2022/05/07/09/30/hotel-7179839_1280.jpg" alt="Foto Hospedagem">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block" src="https://cdn.pixabay.com/photo/2017/05/19/15/16/golf-2326788_1280.jpg" alt="Campo Golfe">
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">E-mail:</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="Digite seu e-mail"
-          />
+    
+    <!-- Descrição -->
+    <div class="pt-5 pb-5" id="sobre">   
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img  src="https://cdn.pixabay.com/photo/2019/02/02/00/48/horse-3970041_1280.jpg" alt="Foto entrada principal" class="d-block w-100 rounded" alt="Foto espaço interno">
+                </div>
+                <div class="col-md-7 mt-3 mt-md-0">
+                    <h2 class="section-title">Sobre <span class="text-colored">o Rancho EBAC</span></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nisi qui ullam quo optio quae. Optio voluptate iste corrupti in, consequatur fuga nesciunt nobis quia eos debitis nulla, delectus dicta!
+                    </p>
+                    <h3 class="section-title pt-5">Nosso <span class="text-colored">Espaço</span></h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ipsam dolore delectus aliquam nulla suscipit quia distinctio sunt qui saepe, nam in voluptatum officia voluptates perspiciatis ratione minima sequi beatae.
+                    </p>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-          <label for="telefone" class="form-label">Telefone:</label>
-          <input
-            type="tel"
-            class="form-control"
-            id="telefone"
-            placeholder="Digite seu telefone"
-          />
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-    </div>
+    </div> 
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+<!-- Card - Sessão de Eventos -->
+    <section class="pt-5 pb-5" id="eventos">
+        <div class="container">
+            <div class="row">   
+                <div class="col-md-4 ">
+                    <article class="card">
+                        <header class="card-header text-header fs-5 fw-bold">
+                            Casamentos
+                        </header>
+                        <img src="https://cdn.pixabay.com/photo/2017/10/20/15/10/bride-2871483_1280.jpg" alt="imagem">
+                        <div class="card-body">
+                            <!-- <h5 class="card-buntitle">Subtítulo do Card</h5> -->
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit..
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Leia mais</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4 ">
+                    <article class="card">
+                        <header class="card-header text-header fs-5 fw-bold">
+                            Shows & Eventos
+                        </header>
+                        <img src="https://cdn.pixabay.com/photo/2017/09/02/18/56/singer-2708204_1280.jpg" alt="imagem">
+                        <div class="card-body">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit..
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Leia mais</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4 ">
+                    <article class="card">
+                        <header class="card-header text-header fs-5 fw-bold" >
+                            Confraternizações
+                        </header>
+                        <img src="https://cdn.pixabay.com/photo/2015/12/12/21/12/dining-table-1090129_1280.jpg" alt="imagem">
+                        <div class="card-body">
+                            <!-- <h5 class="card-buntitle">Subtítulo do Card</h5> -->
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit..
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Leia mais</a>
+                        </div>
+                    </article>
+                </div>
+    </section>
+
+    <!-- Painel -->
+    <section id="estrutura" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center mb-5">
+                    Nossa <span class="text-colored">estrutura</span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <aside>
+                        <nav class="nav nav-pills flex-column nav-estrutura">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#quarto-solteiro" class="fw-bold nav-link text-colored active">Quartos-Solteiro</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#quarto-casal" class="fw-bold nav-link text-colored">Quartos-Casal</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#lazer" class="fw-bold nav-link text-colored">Lazer</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#passeios" class="fw-bold nav-link text-colored">Passeios</button>
+                        </nav>
+                    </aside>
+                </div>
+                <!-- Quartos/Hospedagem -->
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="quarto-solteiro">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/09/02/05/17/hotel-room-5537364_1280.jpg" alt="quarto solteiro">
+                                    <h5 class="fw-bold mt-2">Quarto Solteiro</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/09/02/05/17/hotel-room-5537364_1280.jpg" alt="quarto solteiro">
+                                    <h5 class="fw-bold mt-2">Quarto Solteiro</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/09/02/05/17/hotel-room-5537364_1280.jpg" alt="quarto solteiro">
+                                    <h5 class="fw-bold mt-2">Quarto Solteiro</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/09/02/05/17/hotel-room-5537364_1280.jpg" alt="quarto solteiro">
+                                    <h5 class="fw-bold mt-2">Quarto Solteiro</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/09/02/05/17/hotel-room-5537364_1280.jpg" alt="quarto solteiro">
+                                    <h5 class="fw-bold mt-2">Quarto Solteiro</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/09/02/05/17/hotel-room-5537364_1280.jpg" alt="quarto solteiro">
+                                    <h5 class="fw-bold mt-2">Quarto Solteiro</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quarto-Casal -->
+                        <div class="tab-pane" id="quarto-casal">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/10/01/01/53/room-1706801_1280.jpg" alt="quarto casal">
+                                    <h5 class="fw-bold mt-2">Quarto Casal</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/10/01/01/53/room-1706801_1280.jpg" alt="quarto casal">
+                                    <h5 class="fw-bold mt-2">Quarto Casal 2</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/10/01/01/53/room-1706801_1280.jpg" alt="quarto casal">
+                                    <h5 class="fw-bold mt-2">RQuarto Casal 3</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/10/01/01/53/room-1706801_1280.jpg" alt="quarto casal">
+                                    <h5 class="fw-bold mt-2"> Quarto Casal 3</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/10/01/01/53/room-1706801_1280.jpg" alt="quarto casal">
+                                    <h5 class="fw-bold mt-2">Quarto Casal 4</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/10/01/01/53/room-1706801_1280.jpg" alt="quarto casal">
+                                    <h5 class="fw-bold mt-2">Refrigerantes</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lazer -->
+                        <div class="tab-pane" id="lazer">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/10/11/06/44/waterfall-981822_1280.jpg" alt="cachoeira">
+                                    <h5 class="fw-bold mt-2">Cachoeira</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/11/10/14/36/hawaii-1037043_1280.jpg" alt="piscina natural">
+                                    <h5 class="fw-bold mt-2">Piscina Natural</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/10/11/06/44/waterfall-981822_1280.jpg" alt="cachoeira">
+                                    <h5 class="fw-bold mt-2">Cachoeira</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/11/10/14/36/hawaii-1037043_1280.jpg" alt="piscina natural">
+                                    <h5 class="fw-bold mt-2">Piscina Natural</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/10/11/06/44/waterfall-981822_1280.jpg" alt="cachoeira">
+                                    <h5 class="fw-bold mt-2">Cachoeira</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/11/10/14/36/hawaii-1037043_1280.jpg" alt="piscina natural">
+                                    <h5 class="fw-bold mt-2">Piscina Natural</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Passeios -->
+                        <div class="tab-pane" id="passeios">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/09/22/19/00/ship-952292_1280.jpg" alt="passeio barco">
+                                    <h5 class="fw-bold mt-2">Passeio de Barco</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2021/03/25/14/00/horse-6123173_1280.jpg" alt="passeio a cavalo">
+                                    <h5 class="fw-bold mt-2">Passeio a Cavalo</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/09/22/19/00/ship-952292_1280.jpg" alt="passeio barco">
+                                    <h5 class="fw-bold mt-2">Passeio de Barco</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2021/03/25/14/00/horse-6123173_1280.jpg" alt="passeio a cavalo">
+                                    <h5 class="fw-bold mt-2">Passeio a Cavalo</h5>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center">Fale <span class="text-colored">Conosco</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-7 mb-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                            <input type="text" id="nome" class="form-control" name="nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold text-colored">Seu email</label>
+                            <input type="email" id="email" class="form-control" name="email" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                            <input type="tel" id="telefone" class="form-control" name="telefone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn fw-bold">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes Sociais
+                        </h3>
+                        <ul class="social-links">
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-facebook  text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5 ms-1 me-1">
+                                <a href="#">
+                                    <i class="bi bi-instagram  text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-whatsapp  text-colored"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mt-4">
+                        <h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-cursor-fill"></i>
+                            Endereço
+                        </h3>
+                        <p>
+                            Rua Projeto 3 n. 2232, Bairro Rancho EBAC - Belo Horionte  - MG
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/mains.js"></script>
+</body>
 </html>
