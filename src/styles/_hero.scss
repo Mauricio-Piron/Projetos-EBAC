@@ -1,0 +1,43 @@
+@use 'variables';
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/presente.jpg);
+    background-repeat: no-repeat; /* Não repetir a iamgem */
+    background-size: cover;  /* Ajustar tamanho da imagem para pegar todo tamanho do container com a propriedade cover*/
+    position: relative; /* capacidade de prender os elementos */
+
+    .container {
+        position: relative;
+    }
+
+    &:before {    /* Overlay */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$secundaryTextColor;
+        content: ''; /* a propriedade content e obrigatória ainda que vazia */
+        opacity: 0.4;
+    }     
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 56px;
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 24 0;
+        }
+        
+    }
+}

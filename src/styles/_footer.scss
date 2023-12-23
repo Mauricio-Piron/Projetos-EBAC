@@ -1,40 +1,12 @@
-@use 'variaveis';
+@use 'variables';
 
-.rodape{
-    background-color: #b7b7b7;
-    height: 150px;
-    display: flex;
-    padding: 1em;
-    align-items: center;
-    justify-content: center;
+.footer {
+    background-color: variables.$initial;
+    font-size: 16px;
+    height:5%;
+    width: 100%;
 
-    
-    @media (max-width:768px){
-        height: 100%;
-        display: block;
-        padding: 5px;
-    }
-}
-.rodape-titulo{
-    color: #000000;
-    margin-bottom: 1em;
-}
-
-.rodape-conteudo{
-    color: variaveis.$corLetraRodape;
-    font-size: 14px;
-    list-style: none;
-
-}
-
-.final{
-    width: 30%;
+    display: block;
     text-align: center;
-
-    @media (max-width:768px){
-        position: sticky;
-        bottom: 1px;
-        width: 100%;
-        margin-top: 50px;
-    }
+    padding: 8px 0;
 }
