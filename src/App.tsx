@@ -1,31 +1,15 @@
-import { Provider } from 'react-redux'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Post from "./components/Post";
 
-import EstliGlobal, { Container } from './styles'
-
-import store from './store'
-import Home from './pages/Home'
-import Cadastro from './pages/Cadastro'
-
-const rotas = createBrowserRouter([
-  {
-    path: '/',
-    element: <Home />
-  },
-  {
-    path: '/novo',
-    element: <Cadastro />
-  }
-])
+import styles from './App.module.css';
 
 function App() {
   return (
-    <Provider store={store}>
-      <EstliGlobal />
-      <Container>
-        <RouterProvider router={rotas} />
-      </Container>
-    </Provider>
-  )
+    <div className={styles.app}>
+      <Post imageUrl="https://www.orangeboxminiaturas.com.br/img/products/batmovel-1989-figura-batman-em-metal-jada-toys-1-24-jad-98260_1_1000.jpg">
+        Olha só que legal minha miniatura do Batmóvel.
+      </Post>
+    </div>
+  );
 }
-export default App
+
+export default App;
