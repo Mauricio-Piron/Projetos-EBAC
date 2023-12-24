@@ -1,202 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portal de notícias</title>
-    <link rel="stylesheet" href="./main.css" />
+    <title>Games Shop - A sua loja de game</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Meu portal de notícias</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#sports" title="Ir para a seção de esportes">Esportes</a>
-                    </li>
-                    <li>
-                        <a href="#economy" title="Ir para a seção de notícias">Economia</a>
-                    </li>
-                    <li>
-                        <a href="#entreterimento" title="Ir para seção de entreterimento">Entreterimento</a> 
-                    </li>
-                    <li>
-                        <a href="#tecnologia" title="Ir para seção de tecnologia">Tecnologia</a>
-                    </li>
-                </ul>
-            </nav>
+        <h1>Games Shop</h1> <!--cabeçalho-->
+        <nav> <!--Criação de menus-->
+            <ul> <!--Lista não ordenada-->
+                <li>
+                    <a href="#about">Sobre a loja</a> <!--Links-->
+                </li>
+                <li>
+                    <a href="#contact">Conta</a> <!--Links-->
+                </li>
+            </ul>
+        </nav>
         </div>
     </header>
-    <section id="sports">
+    <section id="about">
         <div class="container">
-                <h2>Esportes</h2>
-           <div class="articles">
-            <article>
-                <img src="./imagens/futebol.jpg" alt="Bola de futebol no gramado" />
-                <header>
-                    <time>13/07/2022 às 12:35</time>
-                </header>
-                <h3>Grande clássico na noite de hoje</h3>
+            <img class="store-front" src="./imagens/loja.jpg" alt="Fachada da loja Games Shop"/>
+            <div>
+                <h2>Sobre a Loja</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti delectus doloribus suscipit molestiae quam porro quasi itaque facere, dolorem eos voluptatem sunt ea totam eius veniam quod quaerat in?
                 </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-            <article>
-                <img src="./imagens/futebol-americano.jpg" alt="Jogador de futebol americano correndo com a bola na mão" />
-                <header>
-                    <time>13/07/2022 às 12:35</time>
-                </header>
-                <h3>Noite do Superbowl</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem totam ex magnam hic, qui dolorem quibusdam cupiditate perferendis incidunt, beatae repellat veniam mollitia doloremque molestiae nihil consectetur officia. Repudiandae.
                 </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-            <article>
-                <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
-                <header>
-                    <time>13/07/2022 às 12:35</time>
-                </header>
-                <h3>Notícia sobre a NBA</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-            <article>
-                <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
-                <header>
-                    <time>13/07/2022 às 12:35</time>
-                </header>
-                <h3>Notícia sobre a NBA</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-           </div>
+                <ul class="brands-list"> <!--Criando uma classe será utilizada no CSS-->
+                    <li><img src="./imagens/nintendo.png" alt="Nintendo" /> </li>
+                    <li><img src="./imagens/xbox.png" alt="Xbox" /> </li>
+                    <li><img src="./imagens/playstation.png" alt="playstation" /> </li>
+                </ul>
+            </div>       
         </div>
     </section>
-    <section id="economy">
+    <section id="contact"> <!--Adiconando id na seção de contato para estilizar posteriormente com CSS-->
         <div class="container">
-                <h2>Economia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/dolares.jpg" alt="Muitos dólares" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Dólar em alta de 0.50%</h3>
+            <h2>Contato</h2>
+            <div class="contact-metodos"> <!--Div criada para ser o container das subseções de contato-->
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required /> <!--Required - definindo como obrigatório-->
+                        <input type="email" placeholder="Seu e-mail" required />
+                        <input type="tel" placeholder="Seu telefone (opcional)* "/>
+                        <textarea placeholder="Sua mensagem" required ></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram" >
+                            <img src="./imagens/instagram.png" alt="Logo Instagram" />
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook" >
+                            <img src="./imagens/facebook.png" alt="Logo Facebook" />
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youtube">
+                            <img src="./imagens/youtube.png" alt="Logo Youtube" />
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                        Rua Java Script nº 124, Vila HTML - Belo Horizonte-MG
                     </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/euro.jpg" alt="Várias notas de euro" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Euro em queda de 0.40%</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/petroleo.jpg" alt="Extração de petróleo" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Alta no preço do barril do petróleo</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
+                </div>
             </div>
-            </div>
-    </section>
-    <section id="entreterimento">
-        <div class="container">
-                <h2>Entreterimento</h2>
-           <div class="articles">
-            <article>
-                <img src="./imagens/entreterimento1.jpg" alt="Próximos Eventos" />
-                <header>
-                    <time>03/01/2023 às 19:52</time>
-                </header>
-                <h3>Confira nossa agenda de Eventos</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-            <article>
-                <img src="./imagens/entreterimento2.jpg" alt="Confira os Lançamentos no Cinema" />
-                <header>
-                    <time>03/01/2023 às 19:54</time>
-                </header>
-                <h3>Já nos Cinemas</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-            <article>
-                <img src="./imagens/entreterimento.jpg" title="Próximos Shows" />
-                <header>
-                    <time>03/01/2023 às 19:59</time>
-                </header>
-                <h3>Próximos Shows</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                </p>
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-           </div>
         </div>
-        <section id="tecnologia">
-            <div class="container">
-                    <h2>Tecnologia</h2>
-               <div class="articles">
-                <article>
-                    <img src="./imagens/tecno1 (1).jpg" alt="Novos Lançamentos" />
-                    <header>
-                        <time>03/01/2023 às 20:14</time>
-                    </header>
-                    <h3>Novidades da Era Digital</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/tecno2.jpg" alt="Confira os Lançamentos no Cinema" />
-                    <header>
-                        <time>03/01/2023 às 20:20</time>
-                    </header>
-                    <h3>Novos Capacitores</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/Bola-tec.jpg" alt="A bola que mudou o futebol" />
-                    <header>
-                        <time>03/01/2023 às 20:20</time>
-                    </header>
-                    <h3>Tecnologia na Copa do Mundo 2022</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-               </div>
-            </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Games Shop - Todos os direitos reservado - 2023
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
