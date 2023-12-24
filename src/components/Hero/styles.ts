@@ -1,82 +1,43 @@
 import styled from 'styled-components'
-import { HeroContainer } from '../Header/styles'
-import { Logo, breakpoints, cores } from '../../styles'
 
-type Props = {
-  capa: string
-}
-
-export const HeroHeaderContainer = styled(HeroContainer)`
-  height: 186px;
-  font-size: 18px;
-  font-weight: 900;
-  color: ${cores.rosa};
-`
-
-export const HeroImage = styled.div<Props>`
-  height: 280px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(${(props) => props.capa});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-`
-
-export const TextContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+export const Formulario = styled.form`
+  height: 360px;
   width: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2018/08/10/15/45/woman-3597101_1280.jpg');
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
 
-  @media (max-width: ${breakpoints.desktop}) {
-    flex-direction: column;
-    gap: 8px;
+  :before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-principal);
+    content: '';
+    opacity: 0.7;
   }
 
-  p {
-    width: 200px;
-    color: ${cores.rosa};
+  @media (max-width: 768px) {
+    .form {
+      height: auto;
+      padding: 24px 0;
+    }
 
-    @media (max-width: ${breakpoints.desktop}) {
-      text-align: center;
-      &:first-child {
-        display: none;
-      }
+    .heroTitle {
+      font-size: 32px;
     }
   }
-
-  ${Logo} {
-    margin-top: 0px;
 `
 
-export const ContainerInfo = styled.div`
-  width: 1024px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media (max-width: ${breakpoints.desktop}) {
-    width: 80%;
-  }
-
-  h3 {
-    font-size: 32px;
-    font-weight: 900;
-    color: ${cores.branco};
-    margin-bottom: 32px;
-  }
-`
-export const CategoriaInfo = styled.p`
-  font-weight: 100;
-  font-size: 32px;
-  line-height: 38px;
-  padding-top: 24px;
-  color: rgba(255, 255, 255, 0.5);
+export const Title = styled.h2`
+  font-family: Gloock, serif;
+  font-size: 48px;
 `
 
-export const CartButton = styled.p`
-  cursor: pointer;
+export const Div = styled.div`
+  position: relative;
+  color: #eee;
 `

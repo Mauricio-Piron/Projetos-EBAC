@@ -1,18 +1,19 @@
-import { Provider } from 'react-redux'
-import { BrowserRouter } from 'react-router-dom'
-
-import { GlobalCSS } from './styles'
-import Rotas from './Routes'
-import { store } from './store'
+import Cabecalho from './components/Cabecalho'
+import Header from './components/Cabecalho'
+import Hero from './components/Hero'
+import ListaVagas from './containers/ListaVagas'
+import EstiloGlobal, { Container } from './global'
 
 function App() {
   return (
-    <Provider store={store}>
-      <BrowserRouter>
-        <GlobalCSS />
-        <Rotas />
-      </BrowserRouter>
-    </Provider>
+    <>
+      <EstiloGlobal />
+      <Cabecalho />
+      <Hero />
+      <Container>
+        <ListaVagas />
+      </Container>
+    </>
   )
 }
 
