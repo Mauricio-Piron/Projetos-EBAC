@@ -1,63 +1,27 @@
-const form = document.getElementById('form-atividade');
-const imgAprovado = '<img src="./images/aprovado.png" alt="Emoji celebrando" />';
-const imgReprovado = '<img src="./images/reprovado.png" alt="Emoji decepcionado" />';
-const atividades = [];
-const notas = [];
-const spanAprovado = '<span class="resultado aprovado">Aprovado</span>';
-const spanReprovado = '<span class="resultado reprovado">Reprovado</span>';
-const notaMinima = parseFloat(prompt("Digite a nota mínima:"))
+$(document).ready(function() {  
+    $('header button').click(function() { /* Adicionando Evento click */
+        $('form').slideDown(); /*Exibir formulário efeito Animações*/
+    })
 
-let linhas = '';
+    $('#botao-cancelar').click(function(e) {
+        $('form').slideUp(); /* Esconder formulário slideup Animações */
+    })
 
-form.addEventListener('submit' , function(e) {
-    e.preventDefault();
-
-    adicionaLinha();
-    atualizatabela();
-    atualizaMediaFinal();
-});
-
-function adicionaLinha() {
-    const inputNomeAtividade = document.getElementById('nome-atividade');
-    const inputNotaAtividade = document.getElementById('nota-atividade');
-
-    if (atividades.includes(inputNomeAtividade.value)) {
-        alert(`A atividade: ${inputNomeAtividade.value} já foi inserida`);
-    } else {
-        atividades.push(inputNomeAtividade.value);
-        notas.push(parseFloat(inputNotaAtividade.value));
-
-    let linha = '<tr>';
-    linha += `<td>${inputNomeAtividade.value}</td>`;
-    linha += `<td>${inputNotaAtividade.value}</td>`;
-    linha += `<td>${inputNotaAtividade.value >= notaMinima ? imgAprovado : imgReprovado}</td>`;
-    linha += '</tr>';
-
-    linhas += linha;
-    }
-    inputNomeAtividade.value = '';
-    inputNotaAtividade.value = '';
-}
-
-    function atualizatabela() {      
-    const corpoTabela = document.querySelector('tbody');
-    corpoTabela.innerHTML = linhas;
-}
-
-function atualizaMediaFinal() {
-    const mediaFinal = calculaMediaFinal();
-
-    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);
-    document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
-
-}
-
-function calculaMediaFinal(){
-    let somaDasNotas = 0;
-
-    for(let i = 0; i < notas.length; i++) {
-        somaDasNotas += notas[i];
-    }
-
-    return somaDasNotas / notas.length;
-}
+    $('form').on('submit', function(e) { /* Evento de submeter */
+        e.preventDefault(); /* Para  previnir comportamento padrão quando o formulario é submetido */
+        const enderecoNovaImagem = $('#endereco-imagem-nova').val(); /* quando formulario for submetido recuperar o endereço isnerido */ 
+        const novoItem = $('<li style="display: none;"></li>'); /* Criar elemento html que será criado ao final da lista */
+        $(`<img src="${enderecoNovaImagem}" />`).appendTo(novoItem); /* Adicionando a imagem e seu endereço e adiconando este elemento ao novo item appendto */
+        $(` 
+            <div class="orverlay-imagem-link"> 
+                <a href="${enderecoNovaImagem}" target="_blank" title="Ver imagem em tamanho real";
+                Ver imagem em tamanho real
+                </a>
+            </div>
+        
+        `).appendTo(novoItem);
+        $(novoItem).appendTo('ul'); /* Adiconando novo item na tag ul */
+        $(novoItem).fadeIn(1000); /* fadeIn - possibilita ajustar carregamento da imagem na pagina */
+        $('#endereco-imagem-nova').val(''); /* Limpando formulario apos ser enviado */
+    })
+})

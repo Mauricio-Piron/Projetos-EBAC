@@ -1,98 +1,85 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-body {
-    background-color: #E7E7E7;
-    padding-top: 100px;
+* {            /* O asterístico significa que será aplicado para todos os campos */
+    margin: 0; /* Removendo margem */
+    padding: 0; /* Removendo espaçamento */
+    box-sizing: border-box; /* Aplicando box-sizzing */
+    font-family: Roboto, sans-serif; /* Fonte a ser utilizada */
 }
 
 header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
+    background-color: #5f27cd; /* Cor de fundo */
+    padding: 16px 0; /* Espaçamento 16px no topo e inferior e 0 esquerda e direito */
+    color: #fff; /* cor de fundo da escrita */
+    display: flex; /* Para deixar o botão ao lado do título */
+    border-bottom: 16px solid #341f97; /* borda na parte inferior do header */
+    justify-content: center; /* Centralizar tudo */
+    text-transform: uppercase; /* Todos as escritas do header em caixa alta */
+    font-style: italic;        /*Deixando a fonte do header em itálico */
+} 
 
-head img {
-    height: 36px;
-    margin-right: 16px;
-}
-
-header h1 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.container {
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
+header button {
+    margin-left: 16px; /*Aplicando uma margem no botão a esquerda de 16px */
 }
 
 form {
-    display: flex;
-    max-width: 640px;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 56px;
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center; /* Centralizando o texto */
+    display: none;
 }
 
-form input {
-    font-size: 24px;
-    background-color: #fff;
-    border: none;
-    border-bottom: 2px solid #000;
+form h2 {
+    margin-bottom: 16px;
+}
+
+input, button {
     padding: 8px;
 }
 
-form button {
+button {
     background-color: #009432;
+    border: none; /* Removendo as bordas */
+    cursor: pointer; /* Efeito ao ítem clicavel dando uma melhor aparência */
+    font-weight: bold; /* Texto do buttom em negrito */
+    text-transform: uppercase; /* Todos as escritas do header em caixa alta */
     color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
 }
 
-table {
-    width: 100%;
-}
-
-table th {
-    border-bottom: 2px solid #000;
-    padding: 16px;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-table td {
-    padding: 16px;
-    text-align: center;
-    font-size: 28px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-table td img {
-    height: 30px;
-}
-
-.resultado {
-    padding: 8px;
-    font-weight: bold;
-    color: #FFF;
-    background-color: #000;
-    border-radius: 3px;
-}
-
-.aprovado {
-    background-color: #009432;
-}
-
-.reprovado {
+#botao-cancelar {
     background-color: red;
+}
+
+ul {
+    display: flex; /* Os elementos dentro do ul fiquem um ao lado do outro */
+    flex-wrap: wrap; /* Para que quando chegar ao limite da tela crie uma nova linha */
+}
+
+ul li {
+    max-width: 25%; /* Tamando máximo */
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden; /*Ocultando a parte da imagem que ultrapassar limite de 280px */
+}
+
+ul li img {
+    width: 100%; /* Determinando que a imagem vai ocupar 100% da area */
+}
+
+.overlay-imagem-link {
+    padding: 16px; /* Espassamento interno */
+    background-color: rgba(0,0,0,0.7); /* cor de fundo com opacidade 0.7 */
+    position: absolute; /* Posicionar elemento no canto inferior */
+    bottom: 0; /* Dizer que vai estar na extremidade */
+    left: 0;
+    width: 100%; /* largura 100% */
+    opacity: 0; /* Removendo opacidade/ocultando */
+    transition: all ease .5s; /* adicionando transicao na hora de aumentar e diminuir a opacidade */
+}
+
+.overlay-imagem-link a { 
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link { 
+    opacity: 1;
 }
