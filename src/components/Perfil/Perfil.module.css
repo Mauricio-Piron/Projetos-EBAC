@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.containerLabel {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.containerInput {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 250px;
+    height: 30px;
+}
+
+.form {
+    background-color: var(--corSecundaria);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.formLabel {
+    color: var(--corPrincipal);
+    font-weight: light;
+    font-size: 20px;
+}
+
+.formInput {
+    color: var(--corPrincipal);
+    font-size: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid var(--corPrincipal);
+    border-radius: 8px;
+    outline: 0;
+}
+
+.formButton {
+    color: var(--corSecundaria);
+    font-size: 20px;
+    border: 30px;
+    background-color: var(--corPrincipal);
+    border-radius: 8px;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+
+.result {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    color: var(--corPrincipal);
+    
+}
+
+.imc {
+    font-size: 15px;
+}
+
+.infos {
+    font-size: 15px;
+}
+
+.infos a:hover {
+    color: var(--corPrincipal);
+}
