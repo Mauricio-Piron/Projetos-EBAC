@@ -4,96 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games Shop - A sua loja de game</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Calculadora de médias</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css" >
 </head>
 <body>
-    <header>
-        <div class="container">
-        <h1>Games Shop</h1> <!--cabeçalho-->
-        <nav> <!--Criação de menus-->
-            <ul> <!--Lista não ordenada-->
-                <li>
-                    <a href="#about">Sobre a loja</a> <!--Links-->
-                </li>
-                <li>
-                    <a href="#contact">Conta</a> <!--Links-->
-                </li>
-            </ul>
-        </nav>
-        </div>
-    </header>
-    <section id="about">
-        <div class="container">
-            <img class="store-front" src="./imagens/loja.jpg" alt="Fachada da loja Games Shop"/>
-            <div>
-                <h2>Sobre a Loja</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti delectus doloribus suscipit molestiae quam porro quasi itaque facere, dolorem eos voluptatem sunt ea totam eius veniam quod quaerat in?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem totam ex magnam hic, qui dolorem quibusdam cupiditate perferendis incidunt, beatae repellat veniam mollitia doloremque molestiae nihil consectetur officia. Repudiandae.
-                </p>
-                <ul class="brands-list"> <!--Criando uma classe será utilizada no CSS-->
-                    <li><img src="./imagens/nintendo.png" alt="Nintendo" /> </li>
-                    <li><img src="./imagens/xbox.png" alt="Xbox" /> </li>
-                    <li><img src="./imagens/playstation.png" alt="playstation" /> </li>
-                </ul>
-            </div>       
-        </div>
-    </section>
-    <section id="contact"> <!--Adiconando id na seção de contato para estilizar posteriormente com CSS-->
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-metodos"> <!--Div criada para ser o container das subseções de contato-->
-                <div>
-                    <h3>Fale conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu nome" required /> <!--Required - definindo como obrigatório-->
-                        <input type="email" placeholder="Seu e-mail" required />
-                        <input type="tel" placeholder="Seu telefone (opcional)* "/>
-                        <textarea placeholder="Sua mensagem" required ></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div>
-                    <h3>Nos acompanhe</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a href="#" title="Siga-nos no Instagram" >
-                            <img src="./imagens/instagram.png" alt="Logo Instagram" />
-                        </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no Facebook" >
-                            <img src="./imagens/facebook.png" alt="Logo Facebook" />
-                        </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite nosso canal no Youtube">
-                            <img src="./imagens/youtube.png" alt="Logo Youtube" />
-                        </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua Java Script nº 124, Vila HTML - Belo Horizonte-MG
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>
-                &copy; Games Shop - Todos os direitos reservado - 2023
-            </p>
-        </div>
-    </footer>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="capelo e diploma">
+            <h1>Calculadora de médias</h1>
+        </header>  <!--Cabeçalho--> 
+        <form id="form-atividade"> <!--Formulário--> 
+            <input type="text" id="nome-atividade" required placeholder="Nome da atividade" />
+            <input type="number" id="nota-atividade" required placeholder="Nota da atividade" min="0" max="10"/>
+            <button type="submit" >Adiconar +</button>
+        </form>
+        <table cellspacing="0"> <!--Tabela-->
+            <thead>  <!--Especifica informacões referente a colunas específicas da tabela-->
+                <tr> <!--Única fileira em uma tabela-->
+                    <th>Nome da atividade</th> <!--Valor de um cabeçalho de uma coluna da tabela-->
+                    <th>Nota atividade </th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody> <!--Conteúdo de uma tabela onde os dados são mantidos-->
+            </tbody>
+            <tfoot> <!--Rodapé Tabela-->
+                <tr> 
+                    <td>Média final</td>
+                    <td id="media-final-valor">---</td>
+                    <td id="media-final-resultado">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
