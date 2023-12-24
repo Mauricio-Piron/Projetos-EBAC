@@ -1,27 +1,31 @@
-import Header from './components/Header'
-import Produtos from './containers/Produtos'
-
-import { GlobalStyle } from './styles'
-import { store } from './store'
 import { Provider } from 'react-redux'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-export type Produto = {
-  id: number
-  nome: string
-  preco: number
-  imagem: string
-}
+import EstliGlobal, { Container } from './styles'
+
+import store from './store'
+import Home from './pages/Home'
+import Cadastro from './pages/Cadastro'
+
+const rotas = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />
+  },
+  {
+    path: '/novo',
+    element: <Cadastro />
+  }
+])
 
 function App() {
   return (
     <Provider store={store}>
-      <GlobalStyle />
-      <div className="container">
-        <Header />
-        <Produtos />
-      </div>
+      <EstliGlobal />
+      <Container>
+        <RouterProvider router={rotas} />
+      </Container>
     </Provider>
   )
 }
-
 export default App
